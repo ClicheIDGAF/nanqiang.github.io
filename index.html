@@ -4,53 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>南墙工作室网单平台</title>
-    <!-- 这里可以加样式，先留空 -->
     <style>
-        /* 先写个简单的样式，让页面好看一点 */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "微软雅黑", sans-serif;
-        }
-        body {
-            background-color: #f0f8ff;
-            text-align: center;
-            padding-top: 100px;
-        }
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-        .product {
-            background: white;
-            width: 300px;
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        .price {
-            color: red;
-            font-size: 20px;
-            margin-top: 10px;
-        }
+        *{margin:0;padding:0;box-sizing:border-box;font-family:"Microsoft YaHei",sans-serif;}
+        body{background:#f5f7fa;}
+        header{background:#2c3e50;color:#fff;padding:16px 20px;text-align:center;}
+        .logo{font-size:22px;font-weight:bold;margin-bottom:6px;}
+        .desc{font-size:14px;opacity:0.9;}
+        .container{max-width:900px;margin:0 auto;padding:20px;}
+        .goods-item{background:#fff;border-radius:12px;padding:16px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,0.06);}
+        .goods-title{font-size:18px;font-weight:bold;margin-bottom:8px;color:#2c3e50;}
+        .goods-price{font-size:20px;color:#e74c3c;font-weight:bold;margin-bottom:12px;}
+        .order-form input{width:100%;padding:12px;margin-bottom:10px;border:1px solid #ddd;border-radius:8px;font-size:14px;}
+        .submit-btn{background:#2c3e50;color:#fff;border:none;width:100%;padding:14px;border-radius:8px;font-size:16px;font-weight:bold;cursor:pointer;}
+        .submit-btn:hover{background:#34495e;}
+        footer{text-align:center;padding:20px;color:#999;font-size:14px;margin-top:20px;}
     </style>
 </head>
 <body>
-    <h1>南墙工作室网单平台</h1>
-    <p>欢迎下单！</p >
 
-    <!-- 你截图里的网课代看商品，直接写进去 -->
-    <div class="product">
-        <h3>网课代看</h3>
-        <div class="price">¥ 3.00 ~ 5.00</div>
+<header>
+    <div class="logo">南墙工作室网单平台</div>
+    <div class="desc">22:16 2026/4/19</div>
+</header>
+
+<div class="container">
+    <div class="goods-item">
+        <div class="goods-title">网课代看</div>
+        <div class="goods-price">¥ 3.00~5.00</div>
+        <form action="https://docs.qq.com/form/page/DWW1vZ1FZZmROSHdD" method="get" target="_blank">
+            <div class="order-form">
+                <input type="text" name="field_name" placeholder="请输入您的姓名" required>
+                <input type="text" name="field_tel" placeholder="请输入您的手机号" required>
+                <input type="text" name="field_address" placeholder="请输入联系QQ/微信" required>
+                <input type="hidden" name="field_goods" value="网课代看">
+                <input type="hidden" name="field_price" value="3.00~5.00">
+                <button class="submit-btn" type="submit">提交订单</button>
+            </div>
+        </form>
     </div>
-    
-    <div class="product">
-    <h3>高性价比电话卡</h3>
-    <p>限四川</p >
-    <div class="price">¥ 20.00~59.00</div>
+
+    <div class="goods-item">
+        <div class="goods-title">四川高性价比电话卡</div>
+        <div class="goods-price">¥ 20.00~59.00</div>
+        <form action="https://docs.qq.com/form/page/DWW1vZ1FZZmROSHdD" method="get" target="_blank">
+            <div class="order-form">
+                <input type="text" name="field_name" placeholder="请输入您的姓名" required>
+                <input type="text" name="field_tel" placeholder="请输入您的手机号" required>
+                <input type="text" name="field_address" placeholder="请输入联系QQ/微信" required>
+                <input type="hidden" name="field_goods" value="四川高性价比电话卡">
+                <input type="hidden" name="field_price" value="20.00~59.00">
+                <button class="submit-btn" type="submit">提交订单</button>
+            </div>
+        </form>
+    </div>
 </div>
+
+<footer>©2026 南墙工作室 版权所有</footer>
+
 </body>
 </html>
